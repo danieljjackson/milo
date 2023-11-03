@@ -24,6 +24,28 @@
 		}
 
 		/*
+		public function getAllTableData($tableName) {
+			try {
+				// Define the SQL statement to select all rows from the specified table
+				$sql = "SELECT * FROM $tableName";
+
+				// Execute the SQL statement
+				$statement = $this->dbModel->executeQuery($sql);
+
+				// Fetch all rows as an associative array
+				$data = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+				// Return the data
+				return $data;
+			} catch (PDOException $e) {
+				// Handle database errors here
+				echo "Error: " . $e->getMessage();
+				return false;	// or, handle the error as needed
+			}
+		}
+		*/
+
+		/*
 		public function createTable() {
 			try {
 				// Define the SQL statement to create a table

@@ -21,3 +21,6 @@
 
     // Call the test method in the DatabaseController
     $databaseController->test();
+
+    //$data = $databaseController->getAllTableData("Users");
+    //var_dump($data);
