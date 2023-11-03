@@ -5,8 +5,17 @@
 		private $dbModel;
 
 		public function __construct() {
+			// Read the database connection parameters from the config.php file
+			$config = require "config.php";
+
+			$dbHost = $config["dbHost"];
+			$dbUser = $config["dbUser"];
+			$dbPassword = $config["dbPassword"];
+			$dbName = $config["dbName"];
+
 			// Initialize the database model
-			$this->dbModel = new DatabaseModel("localhost", "username", "password", "miloDB");
+			//$this->dbModel = new DatabaseModel("localhost", "username", "password", "miloDB");
+			$this->dbModel = new DatabaseModel($dbHost, $dbUser, $dbPassword, $dbName);
 		}
 
 		// TODO: This is a test function, remove eventually
