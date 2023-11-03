@@ -9,6 +9,12 @@
 			$this->dbModel = new DatabaseModel("localhost", "username", "password", "miloDB");
 		}
 
+		// TODO: This is a test function, remove eventually
+		public function test() {
+			echo "This is a test function";
+		}
+
+		/*
 		public function createTable() {
 			try {
 				// Define the SQL statement to create a table
@@ -28,4 +34,5 @@
 				echo "Error: " . $e->getMessage();
 			}
 		}
+		*/
 	}
